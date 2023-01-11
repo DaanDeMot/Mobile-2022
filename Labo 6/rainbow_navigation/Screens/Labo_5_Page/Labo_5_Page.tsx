@@ -38,9 +38,9 @@ export function Labo_5_Landing() {
       <ScrollView>
         <View style={{ flex: 1, alignItems: "stretch" }}>
           {colors.map((color) => (
-            <TouchableOpacity onPress={() => navigation.navigate("Detail", {color : color.hex})}>
+            <TouchableOpacity  key={color.hex} onPress={() => navigation.navigate("Detail", {color : color.hex})}>
               <View
-                key={color.hex}
+               
                 style={{
                   height: 50,
                   backgroundColor: color.hex,

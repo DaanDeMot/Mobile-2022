@@ -23,7 +23,7 @@ interface IFooter {
     const ShowSixLetters = () =>{
         let letterGroup : JSX.Element[] = [];
         for (let i=0; i <=9; i++){
-            letterGroup.push(<Letter key={text[i]} letter={text.charAt(i)} fontColor={colors[i].hex}></Letter>);
+            letterGroup.push(<Letter key={text.indexOf()} letter={text.charAt(i)} fontColor={colors[i].hex}></Letter>);
         }
         return letterGroup;
     }
